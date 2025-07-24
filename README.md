@@ -40,13 +40,11 @@ No build tools or dependencies required!
 
 | Start Screen | Game Over |
 |--------------|-----------|
-| ![Start Screen](https://https://github.com/abdulmenan-seman/Classical-Snake-game/blob/main/Screenshot%202025-07-24%20095400.jpg) | ![Game Over](https://user-images.githubusercontent.com/your-username/snake-master-gameover.png) |
+| ![Start Screen](https://github.com/abdulmenan-seman/Classical-Snake-game/blob/main/Screenshot%202025-07-24%20095400.jpg) | ![Game Over](https://user-images.githubusercontent.com/your-username/snake-master-gameover.png) |
 
 ## 📝 License
 
-This project is licensed under the [MIT License](LICENSE).
 
----
 
 **Enjoy playing Snake Master!**  
 If you like this project, please ⭐️ star the repo and share your feedback!
