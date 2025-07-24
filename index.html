@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Master - Professional Snake Game</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-container" id="gameContainer">
+      <div class="game-header">
+        <div class="logo-section">
+          <div class="logo">🐍</div>
+          <h1 class="game-title">Snake Master</h1>
+        </div>
+        <div class="stats-section">
+          <div class="stat-item">
+            <div class="stat-label">Score</div>
+            <div class="stat-value" id="scoreDisplay">0</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-label">High Score</div>
+            <div class="stat-value" id="highScoreDisplay">0</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-label">Length</div>
+            <div class="stat-value" id="lengthDisplay">1</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-board">
+        <canvas id="gameCanvas" width="480" height="480"></canvas>
+
+        <div class="overlay" id="pauseOverlay">
+          <div class="pause-content">
+            <div class="pause-icon">⏸️</div>
+            <div class="pause-title">Game Paused</div>
+            <div class="pause-subtitle">Press SPACE to continue playing</div>
+          </div>
+        </div>
+
+        <div class="overlay" id="gameOverOverlay">
+          <div class="game-over-modal">
+            <div class="game-over-icon">💀</div>
+            <div class="game-over-title">Game Over</div>
+            <div class="final-score-section">
+              <div class="final-score-label">Final Score</div>
+              <div class="final-score-value" id="finalScore">0</div>
+            </div>
+            <div class="control-buttons">
+              <button class="btn btn-primary" onclick="restartGame()">
+                Play Again
+              </button>
+              <button class="btn btn-secondary" onclick="showStartScreen()">
+                Main Menu
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="overlay show" id="startOverlay">
+          <div class="start-screen">
+            <div class="start-logo">🐍</div>
+            <div class="start-title">Snake Master</div>
+            <div class="start-subtitle">
+              The ultimate snake game experience with smooth gameplay and
+              stunning visuals
+            </div>
+
+            <div class="difficulty-selector">
+              <button class="difficulty-btn" data-speed="200">Easy</button>
+              <button class="difficulty-btn active" data-speed="150">
+                Normal
+              </button>
+              <button class="difficulty-btn" data-speed="100">Hard</button>
+              <button class="difficulty-btn" data-speed="75">Expert</button>
+            </div>
+
+            <button class="btn btn-primary" onclick="startNewGame()">
+              Start Game
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-controls">
+        <div class="control-instructions">
+          <div class="control-key">
+            <span>↑ ↓ ← →</span>
+            <span>Move</span>
+          </div>
+          <div class="control-key">
+            <span>SPACE</span>
+            <span>Pause</span>
+          </div>
+          <div class="control-key">
+            <span>R</span>
+            <span>Restart</span>
+          </div>
+        </div>
+        <div class="control-buttons">
+          <button class="btn btn-secondary" onclick="togglePause()">
+            Pause
+          </button>
+          <button class="btn btn-primary" onclick="restartGame()">
+            Restart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
