@@ -22,7 +22,7 @@
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/your-username/snake-master.git
+   git clone https://github.com/abdulmenan-seman/Classical-Snake-game.git
    cd snake-master
    ```
 
